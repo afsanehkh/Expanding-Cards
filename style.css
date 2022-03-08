@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+body {
+  font-family: 'muli', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+}
+
+.card {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  flex: 0.5;
+  border-radius: 50px;
+  margin: 10px;
+  transition: flex 0.4s ease-in;
+}
+
+.card.active {
+  flex: 5;
+}
+
+h4 {
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  left: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.card.active h4 {
+  opacity: 1;
+}
